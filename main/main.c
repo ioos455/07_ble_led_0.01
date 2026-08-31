@@ -11,4 +11,8 @@ void app_main(void)
     led_init(); /* 初始化LED */
     ble_init(); /* 初始化蓝牙 */
 
+        while(1)
+        {
+            vTaskDelay(pdMS_TO_TICKS(20));
+        }
 }
